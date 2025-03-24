@@ -36,5 +36,5 @@ source: season_results is duckdb.table('reg_season_end.parquet') extend {
     order_by: wins_
     }
 }
-
+ 
 run: season_results extend { where: winning_team = 'DEN' } -> by_wins
